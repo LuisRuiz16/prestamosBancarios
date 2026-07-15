@@ -60,6 +60,8 @@ jobs:
             echo "DB_PASSWORD=$(openssl rand -hex 24)"
             echo "APP_SECURITY_ENABLED=false"
             echo "APP_API_KEY=$(openssl rand -hex 24)"
+            echo "PGADMIN_EMAIL=ci@example.invalid"
+            echo "PGADMIN_PASSWORD=$(openssl rand -hex 24)"
           } > .env
 
       - name: Levantar aplicacion y base de datos
