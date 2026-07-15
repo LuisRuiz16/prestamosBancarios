@@ -31,6 +31,9 @@ Thumbs.db
 
 # Logs y temporales
 *.log
+.codex-tmp/
 
 .env
 .env.local
+*.env
+!.env.example
